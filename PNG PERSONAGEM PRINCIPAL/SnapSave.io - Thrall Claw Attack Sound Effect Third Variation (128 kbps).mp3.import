@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SnapSave.io - Thrall Claw Attack Sound Effect Third Variation (128 kbps).mp3-c1a7453a7fd5230d8f2c4935285b0724.mp3str"
+
+[deps]
+
+source_file="res://PNG PERSONAGEM PRINCIPAL/SnapSave.io - Thrall Claw Attack Sound Effect Third Variation (128 kbps).mp3"
+dest_files=[ "res://.import/SnapSave.io - Thrall Claw Attack Sound Effect Third Variation (128 kbps).mp3-c1a7453a7fd5230d8f2c4935285b0724.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

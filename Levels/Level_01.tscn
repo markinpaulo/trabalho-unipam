@@ -1,0 +1,252 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://02. Parallax BG_Layers/Parallax BG 01.jpg" type="Texture" id=2]
+[ext_resource path="res://PNG PERSONAGEM PRINCIPAL/tilemap/Ground1.png" type="Texture" id=3]
+[ext_resource path="res://PNG PERSONAGEM PRINCIPAL/tilemap/Ground5.png" type="Texture" id=4]
+[ext_resource path="res://PNG PERSONAGEM PRINCIPAL/tilemap/Ground4.png" type="Texture" id=5]
+[ext_resource path="res://PNG PERSONAGEM PRINCIPAL/tilemap/Ground2.png" type="Texture" id=6]
+[ext_resource path="res://02. Parallax BG_Layers/Parallax BG 02.png" type="Texture" id=7]
+[ext_resource path="res://02. Parallax BG_Layers/Parallax BG 03.png" type="Texture" id=8]
+[ext_resource path="res://02. Parallax BG_Layers/Parallax BG 05.png" type="Texture" id=9]
+[ext_resource path="res://02. Parallax BG_Layers/Parallax BG 04.png" type="Texture" id=10]
+[ext_resource path="res://Death.tscn" type="PackedScene" id=11]
+[ext_resource path="res://02. Parallax BG_Layers/Parallax BG 07.png" type="Texture" id=12]
+[ext_resource path="res://02. Parallax BG_Layers/Parallax BG 08.png" type="Texture" id=13]
+[ext_resource path="res://02. Parallax BG_Layers/Parallax BG 10.png" type="Texture" id=14]
+[ext_resource path="res://02. Parallax BG_Layers/Parallax BG 09.png" type="Texture" id=15]
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 64, 32, 0, 32, 0, 16, 64, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 0, 16, 64, 16, 64, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=4]
+0/name = "Ground5.png 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Ground2.png 1"
+1/texture = ExtResource( 6 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 5 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "Ground1.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 8 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "Ground4.png 3"
+3/texture = ExtResource( 5 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 64, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Ground1.png 4"
+4/texture = ExtResource( 3 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 16, 16, 16, 16 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "Ground2.png 5"
+5/texture = ExtResource( 6 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 16, 64, 16 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 7 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+
+[node name="Level_01" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 448, 512 )
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 0, 144 )
+tile_set = SubResource( 4 )
+cell_size = Vector2( 16, 16 )
+show_collision = true
+collision_layer = 8
+collision_mask = 8
+format = 1
+tile_data = PoolIntArray( 786519, 2, 0, 852046, 2, 0, 983136, 2, 0, 1048638, 2, 0, 1048648, 2, 0, 1179703, 2, 0, 1179707, 2, 0, 1179708, 2, 0, 1245252, 2, 0, 1310773, 2, 0, 1376307, 2, 0, 1376357, 1, 0, 1441838, 2, 0, 1441841, 2, 0, 1507371, 2, 0, 1638440, 2, 0, 1704042, 1, 0, 1769511, 2, 0, 1900654, 1, 0, 1966115, 2, 0, 2162688, 2, 0, 2162692, 2, 0, 2162696, 2, 0, 2162700, 2, 0, 2162704, 2, 0, 2162708, 2, 0, 2162712, 2, 0, 2162716, 2, 0, 2162720, 2, 0, 2162724, 2, 0, 2162728, 2, 0, 2162732, 2, 0, 2162736, 2, 0, 2162740, 2, 0, 2162744, 2, 0, 2162747, 2, 0, 2162750, 2, 0, 2162754, 2, 0, 2162757, 2, 0, 2162761, 2, 0, 2162764, 2, 0, 2162768, 2, 0, 2162772, 2, 0, 2162775, 2, 0, 2162779, 2, 0, 2162783, 2, 0, 2162787, 2, 0, 2162790, 2, 0, 2162794, 2, 0, 2162798, 2, 0, 2162802, 2, 0, 2162806, 2, 0, 2162810, 2, 0, 2162814, 2, 0, 2162818, 2, 0, 2162822, 2, 0, 2162826, 2, 0, 2162830, 2, 0, 2162834, 2, 0, 2162838, 2, 0, 2162842, 2, 0, 2162846, 2, 0, 2162850, 2, 0, 2162856, 2, 0, 2162861, 2, 0, 2162868, 2, 0, 2293764, 3, 0, 2293804, 0, 0, 2359324, 3, 0, 2359328, 0, 0, 2359332, 0, 0, 2359336, 0, 0, 2359340, 0, 0, 2424832, 0, 0, 2424840, 3, 0, 2424844, 0, 0, 2424848, 0, 0, 2424852, 3, 0, 2424856, 3, 0, 2424880, 3, 0, 2424884, 3, 0, 2424888, 3, 0, 2424892, 3, 0, 2424896, 3, 0, 2424900, 536870912, 0, 2424904, 0, 0, 2424905, 0, 0, 2424906, 0, 0, 2424907, 0, 0, 2424908, 0, 0, 2424909, 0, 0, 2424910, 0, 0, 2424914, 536870912, 0, 2424918, 536870912, 0, 2424922, 536870912, 0, 2424926, 536870912, 0, 2424930, 536870912, 0, 2424934, 536870915, 0, 2424938, 3, 0, 2424942, 3, 0, 2424946, 3, 0, 2424950, 3, 0, 2424954, 3, 0, 2424957, 3, 0, 2424961, 3, 0, 2424965, 3, 0, 2490372, 3, 0, 2490439, 0, 0, 2621460, 3, 0, 2621468, 536870915, 0, 2621472, 536870915, 0, 2621476, 536870915, 0, 2621480, 536870912, 0, 2621484, 536870912, 0, 2686976, 0, 0, 2686984, 3, 0, 2686988, 3, 0, 2686992, 3, 0, 2687000, 3, 0, 2687024, 536870915, 0, 2687028, 536870915, 0, 2687032, 536870912, 0, 2687036, 536870912, 0, 2687040, 536870912, 0, 2687044, 536870912, 0, 2687048, 536870912, 0, 2687052, 536870912, 0, 2687056, 536870912, 0, 2687060, 536870912, 0, 2687064, 536870912, 0, 2687068, 536870912, 0, 2687072, 536870912, 0, 2687076, 536870912, 0, 2687080, 536870915, 0, 2687084, 3, 0, 2687088, 3, 0, 2687092, 3, 0, 2687096, 3, 0, 2687098, 3, 0, 2687101, 3, 0, 2687105, 3, 0, 2687109, 3, 0, 2752516, 3, 0, 2883604, 3, 0, 2883608, 0, 0, 2949120, 0, 0, 2949124, 3, 0, 2949128, 0, 0, 2949132, 3, 0, 2949136, 3, 0, 3014676, 3, 0, 3145752, 0, 0, 3211264, 0, 0, 3211268, 3, 0, 3211272, 0, 0, 3211276, 0, 0, 3211280, 0, 0, 3211284, 3, 0, 3407896, 0, 0, 3473408, 0, 0, 3473412, 3, 0, 3473416, 0, 0, 3473420, 0, 0, 3473424, 0, 0, 3473428, 3, 0, 3735552, 0, 0, 3735560, 0, 0, 3735564, 0, 0, 3735568, 0, 0, 3866628, 3, 0, 3997704, 0, 0, 3997708, 0, 0, 4128772, 3, 0, 4259852, 0, 0 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="mountain" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 1.3, 1 )
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/mountain"]
+position = Vector2( 16, 128 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 0, 64 )
+motion_scale = Vector2( 1.25, 1 )
+motion_mirroring = Vector2( 1400, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2( -16, 144 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 1.2, 1 )
+motion_mirroring = Vector2( 1400, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2( 0, 128 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 16, 16 )
+motion_scale = Vector2( 1.15, 1 )
+motion_mirroring = Vector2( 1400, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 0, -7.62939e-06 )
+scale = Vector2( 1, 1.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 0, -64 )
+motion_scale = Vector2( 1.1, 1 )
+motion_mirroring = Vector2( 1400, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
+position = Vector2( 16, 256 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 1.05, 1 )
+motion_mirroring = Vector2( 1400, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 960, 384 )
+texture = ExtResource( 12 )
+
+[node name="parallax front" type="ParallaxBackground" parent="."]
+layer = 1
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="parallax front"]
+position = Vector2( 0, 144 )
+motion_mirroring = Vector2( 1400, 0 )
+
+[node name="Sprite" type="Sprite" parent="parallax front/ParallaxLayer"]
+position = Vector2( 0, 128 )
+texture = ExtResource( 13 )
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="parallax front"]
+position = Vector2( -16, 128 )
+motion_scale = Vector2( 0.95, 1 )
+motion_mirroring = Vector2( 1400, 0 )
+
+[node name="Sprite" type="Sprite" parent="parallax front/ParallaxLayer2"]
+position = Vector2( 0, 128 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="parallax front"]
+position = Vector2( -144, -16 )
+scale = Vector2( 1, 1.2 )
+motion_scale = Vector2( 0.9, 1 )
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Sprite" type="Sprite" parent="parallax front/ParallaxLayer3"]
+position = Vector2( 0, 128 )
+texture = ExtResource( 14 )
+centered = false
+
+[node name="Death" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1344, 656 )
