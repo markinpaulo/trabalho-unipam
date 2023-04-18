@@ -1,0 +1,66 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://black_dark/flying_2.png" type="Texture" id=8]
+[ext_resource path="res://black_dark/flying_4.png" type="Texture" id=9]
+[ext_resource path="res://black_dark/flying_5.png" type="Texture" id=10]
+[ext_resource path="res://black_dark/flying_6.png" type="Texture" id=11]
+[ext_resource path="res://black_dark/flying_1.png" type="Texture" id=12]
+[ext_resource path="res://black_dark/flying_7.png" type="Texture" id=13]
+[ext_resource path="res://black_dark/flying_8.png" type="Texture" id=14]
+[ext_resource path="res://black_dark/flying_3.png" type="Texture" id=15]
+[ext_resource path="res://Boss.gd" type="Script" id=16]
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 50, 71 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 85.5, 22.5 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 63.3476, 13.7109 )
+
+[sub_resource type="SpriteFrames" id=13]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "iddle",
+"speed": 10.0
+} ]
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+collision_layer = 9
+collision_mask = 9
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 19, 21 )
+shape = SubResource( 12 )
+
+[node name="PlayerDetector" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector"]
+position = Vector2( -215, 42 )
+shape = SubResource( 6 )
+
+[node name="AttackDetector" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 3
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackDetector"]
+modulate = Color( 0.027451, 0, 0.478431, 1 )
+position = Vector2( -215.348, 42 )
+shape = SubResource( 7 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -355, -523 )
+scale = Vector2( 3, 3 )
+frames = SubResource( 13 )
+animation = "iddle"
+centered = false
+
+[connection signal="body_entered" from="PlayerDetector" to="." method="_on_PlayerDetector_body_entered"]
+[connection signal="body_entered" from="AttackDetector" to="." method="_on_AttackDetector_body_entered"]
